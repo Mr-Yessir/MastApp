@@ -1,11 +1,12 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
-import { StyleSheet, Image, Platform } from 'react-native';
+import { StyleSheet, Image, Platform, Text, TextInput } from 'react-native';
 
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { View } from 'react-native-reanimated/lib/typescript/Animated';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function TabTwoScreen() {
   return (
@@ -84,8 +85,20 @@ export default function TabTwoScreen() {
           ),
         })}
       </Collapsible>
+    
     </ParallaxScrollView>
   );
+       /*  <View>
+            <Text>Welcome Chef!!</Text>
+            <Text>Enter Dish Name:</Text>
+            <TextInput placeholder='Dish Name'/>
+            <Text>Enter the Description:</Text>
+            <TextInput placeholder='Description'/>
+            <Text>Enter the Price</Text>
+            <TextInput placeholder='Price'/> 
+        
+          </View> */
+
 }
 
 const styles = StyleSheet.create({

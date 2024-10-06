@@ -1,12 +1,14 @@
-import { Image, StyleSheet, Platform } from 'react-native';
-
+import { Image, StyleSheet, Platform, Text, View, SectionList } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
 export default function HomeScreen() {
+  /*
   return (
+    
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
@@ -47,6 +49,14 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
+  );*/
+
+  return (
+    <View style={styles.container}>
+      <Text>Welcome to the Restuarent Menu</Text>
+
+      
+    </View>
   );
 }
 
@@ -67,4 +77,10 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
+  container:{
+    flex: 1,
+    backgroundColor: '#fff', 
+    alignItems: 'center', 
+    justifyContent: 'center'
+  }, 
 });
