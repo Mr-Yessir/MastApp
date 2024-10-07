@@ -23,10 +23,11 @@ export default function TabLayout() {
           ),
         }}
       />
+      
       <Tabs.Screen
-        name="_chefPortal"
+        name="chefPortal"
         options={{
-          title: 'Home Page',
+          title: 'Chef Portal',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
