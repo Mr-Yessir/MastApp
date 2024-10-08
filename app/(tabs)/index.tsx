@@ -7,15 +7,6 @@ import { ThemedView } from '@/components/ThemedView';
 import { SetStateAction, useState } from 'react';
 import { Picker } from '@react-native-picker/picker';
 
-  /**
-   * Sources used: 
-   * https://docs.expo.dev/get-started/set-up-your-environment/?mode=development-build 
-   * https://unsplash.com/photos/green-teapot-pouring-red-liquid-to-white-teacup-closeup-photography-5Vnd6GXbNvA 
-   * https://www.npmjs.com/package/react-scroll-parallax 
-   * https://www.npmjs.com/package/@react-native-picker/picker 
-   * https://reactnative.dev/docs/images  
-   * 
-   */
   const items = [
     { label: 'Main Dish', value: 'main dish', image: require('@/assets/images/kota.jpg') },
     { label: 'Dessert', value: 'dessert', image: require('@/assets/images/dessert.jpg') },
@@ -199,7 +190,7 @@ const styles = StyleSheet.create({
         width: 'auto',
         backgroundColor: '#87CEFA'
       },
-      displayText: {
+      displayText: { //(IIE,2024)
         fontSize: 25,
         textAlign: 'center',
 
@@ -215,7 +206,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         textDecorationStyle: 'solid'
       },
-      item: {
+      item: { 
         padding: 10,
         borderColor: 'gray',
         borderWidth: 1,
@@ -229,7 +220,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         color: 'white'
       },
-      logoStyle: {
+      logoStyle: { //(IIE,2024)
         width: 'auto',
         height: '100%',
         resizeMode: 'contain',
@@ -247,7 +238,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         width: 'auto'
       },
-      button: {
+      button: { 
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 12,
@@ -265,9 +256,18 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 21,
         fontWeight: 'bold',
-        letterSpacing: 0.25,
+        letterSpacing: 0.25, //(IIE,2024)
         color: 'white',
         alignContent: 'center'
       },
     });
     export default App;
+    /**
+   * Sources used: 
+   * https://docs.expo.dev/get-started/set-up-your-environment/?mode=development-build 
+   * https://unsplash.com/photos/green-teapot-pouring-red-liquid-to-white-teacup-closeup-photography-5Vnd6GXbNvA 
+   * https://www.npmjs.com/package/react-scroll-parallax 
+   * https://www.npmjs.com/package/@react-native-picker/picker 
+   * https://reactnative.dev/docs/images  
+   * 
+   */
